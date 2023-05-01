@@ -2071,7 +2071,7 @@ MonoBehaviour:
   - {fileID: 981593827}
   - {fileID: 1999205867}
   - {fileID: 1117681471}
-  _damageController: {fileID: 0}
+  _damageController: {fileID: 558774515}
 --- !u!114 &558774511
 MonoBehaviour:
   m_ObjectHideFlags: 0
