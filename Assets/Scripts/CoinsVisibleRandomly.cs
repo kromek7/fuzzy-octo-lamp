@@ -9,7 +9,7 @@ public class CoinsVisibleRandomly : MonoBehaviour
     [SerializeField] private GameObject[] objectsToToggle;
     [SerializeField] private float visibilityRatio = 0.55f;
 
-    void Start()
+    private void Awake()
     {
       
         foreach (GameObject obj in objectsToToggle)
