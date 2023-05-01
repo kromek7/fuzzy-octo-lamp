@@ -24,7 +24,7 @@ public class HealthController : MonoBehaviour
 
             //this.gameObject.GetComponent<skryptdosterowania>.enabled = false;
 
-            Time.timeScale = 0;
+            Time.timeScale = 0; // Freeze gry
 
             Debug.Log("GAME OVER");
         }
