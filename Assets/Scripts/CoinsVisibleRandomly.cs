@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class CoinsVisibleRandomly : MonoBehaviour
 {
 
-    public GameObject[] objectsToToggle;
+    [SerializeField] private GameObject[] objectsToToggle;
+    [SerializeField] private float visibilityRatio = 0.55f;
 
-    void Start()
+    private void Awake()
     {
       
         foreach (GameObject obj in objectsToToggle)
         {
-            obj.SetActive(Random.value > 0.7f);
+            obj.SetActive(Random.value > visibilityRatio);
         }
-
 
     }
 }

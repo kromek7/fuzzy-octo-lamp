@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class GenerateSections : MonoBehaviour
 {
-    public GameObject player;
+    //public GameObject player;
     [SerializeField] private GameObject startSection;
     [SerializeField] private GameObject[] section;
-    [SerializeField] private int spawningZPos = 50;
-    [SerializeField] private int lengthOfSection = 50;
+    [SerializeField] private int spawningZPos = 32;
+    [SerializeField] private int lengthOfSection = 32;
     //[SerializeField] private bool isSpawning = false;
     //[SerializeField] private int secNumber;
-    public int numberOfTilesSpawningAtStart;
+    public int numberOfTilesSpawningAtStart = 5;
 
 
 
@@ -47,9 +47,9 @@ public class GenerateSections : MonoBehaviour
         {
 
             SpawnTile(Random.Range(0, section.Length));
-            spawningZPos -= lengthOfSection;
+            //spawningZPos -= lengthOfSection;
 
-            Debug.Log("EnterTrigger");
+            Debug.Log("EnterTrigger - Instantiate Next Segment");
         }
 
     }
